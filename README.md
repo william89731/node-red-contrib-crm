@@ -1,10 +1,11 @@
-# node-red-contrib-crm
+# node-red-contrib-crp
 
-![Screenshot_20210809_230633](https://user-images.githubusercontent.com/68069659/128774606-10cc96c3-07f0-4ff3-9144-759be257e2b0.png)
+![Screenshot_20210810_142815](https://user-images.githubusercontent.com/68069659/128866938-794eceb9-c1a6-4889-878b-0c9c5a1d0ea3.png)
 
 
-Count,Reset and passtrougt Message  :-)
+
+Count,Reset to allow Payload  :-)
 
 # installazione 
 
-aggiungete a manina il modulo,che non sta pubblicato da nessuna parte
+npm i node-red-contrib-crp

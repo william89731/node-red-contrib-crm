@@ -1,10 +1,10 @@
- <script type="text/javascript">
+  <script type="text/javascript">
     RED.nodes.registerType('crp',{
         category: 'function',
         color: '#7fff00',
 		defaults: {
             name: {value:""},
-			max_msg: {value:1, required: true,validate:RED.validators.number()},
+			max_msg: {value:"", required: true,validate:RED.validators.number()},
 			autoreset:{value:false},		
         }, 
         inputs:1,
@@ -19,18 +19,18 @@
 
 <script type="text/x-red" data-template-name="crp">
     <div class="form-row">
-        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <div align=left
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
+        </div>
 		<BR>
-		<BR>
-		<label for="node-input-max_msg"><i class="icon-tag"></i>Max value</label>
-		<input type="text" id="node-input-max_msg" placeholder="Set max number to send msg">
-		<BR>
-		<BR>
-		<label style="width: 30% !important;" for="node-input-autoreset" title="Auto save and reload dynamic schedules">Reset after max count</label>
-		<input type="checkbox" id="node-input-autoreset" style="display:inline-block; width:15px; vertical-align:baseline;" autocomplete="off">
-        
-		
+        <BR>  
+        <div align=left      
+        <label for="node-input-autoreset"><i class="fa fa-wrench"></i> </label>
+		<label style="width: 30%   "   for="node-input-autoreset" >Reset after max msg </label>
+		<input type="checkbox" id="node-input-autoreset" style="display:inline-block; width:30px " autocomplete="off">
+        <input type="text" id="node-input-max_msg" style="width: 40%" placeholder="3">
+        </div>
     </div>
 </script>
 

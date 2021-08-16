@@ -5,7 +5,13 @@
 
 Count,Reset to allow Payload  :-)
 
-thanks to @folgore, big boss of [nodeRED italia](https://t.me/noderedIT)
+![inpostazioniNodo](https://user-images.githubusercontent.com/68069659/129620364-0c98dcad-5b87-4822-894c-8d18e3e15903.png)
+
+thanks to:
+
+@folgore, big boss of [nodeRED italia](https://t.me/noderedIT)
+
+@patrick tiraboschi, admin of [[SN]javaScript italia](https://t.me/javascript_ita) 
 
 # installation
 

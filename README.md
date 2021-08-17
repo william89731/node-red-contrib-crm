@@ -13,6 +13,8 @@ thanks to:
 
 @patrick tiraboschi, admin of [[SN]javaScript italia](https://t.me/javascript_ita) 
 
+@fatshotty, great member of [[SN]javaScript italia](https://t.me/javascript_ita) 
+
 # installation
 
 ![Screenshot_20210815_124901](https://user-images.githubusercontent.com/68069659/129475979-7d52f4ab-5ff7-4cff-8e35-eda76204aa94.png)

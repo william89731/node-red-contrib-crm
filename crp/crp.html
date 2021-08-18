@@ -4,8 +4,11 @@
         color: '#7fff00',
 		defaults: {
             name: {value:""},
-			max_msg: {value:"", required: true,validate:RED.validators.number()},
-			autoreset:{value:false},		
+			max_msg: {value:3, required: true,validate:RED.validators.number()},
+			autoreset: {value:true},
+            timeout: {value:true},
+            max_timeout: {value:3000, required: true,validate:RED.validators.number()}, 
+
         }, 
         inputs:1,
         outputs:1,
@@ -23,13 +26,22 @@
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
         </div>
+        
 		<BR>
         <BR>  
         <div align=left      
         <label for="node-input-autoreset"><i class="fa fa-wrench"></i> </label>
-		<label style="width: 30%   "   for="node-input-autoreset" >Reset after max msg </label>
-		<input type="checkbox" id="node-input-autoreset" style="display:inline-block; width:30px " autocomplete="off">
-        <input type="text" id="node-input-max_msg" style="width: 40%" placeholder="3">
+        <input type="checkbox" id="node-input-autoreset" style="display:inline-block; width:30px " autocomplete="off">
+		<label style="width: 30% " for="node-input-autoreset" >Reset after  </label>
+        <input type="text" id="node-input-max_msg" style="width: 60%" placeholder="Set max payload">
+        </div>
+        <BR>
+        <BR>
+        <div align=left      
+        <label for="node-input-timeout"><i class="fa fa-clock-o"></i> </label>
+        <input type="checkbox" id="node-input-timeout" style="display:inline-block; width:30px " autocomplete="off"> 
+        <label style="width: 30% " for="node-input-timeout" >Timeout to reset </label>
+        <input type="text" id="node-input-max_timeout" style="width: 60%" placeholder="set seconds in Ms"> 
         </div>
     </div>
 </script>

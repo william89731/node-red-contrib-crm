@@ -1,0 +1,51 @@
+ <script type="text/javascript">
+    RED.nodes.registerType('crp',{
+        category: 'function',
+        color: '#7fff00',
+		defaults: {
+            name: {value:""},
+			max_msg: {value:3, required: true,validate:RED.validators.number()},
+			autoreset: {value:true},
+            timeout: {value:true},
+            max_timeout: {value:3000, required: true,validate:RED.validators.number()}, 
+
+        }, 
+        inputs:1,
+        outputs:1,
+        icon: "envelope.svg",
+		align:"left",
+        label: function() {
+            return this.name||"crp";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="crp">
+    <div class="form-row">
+        <div align=left
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+        </div>
+        
+		<BR>
+        <BR>  
+        <div align=left      
+        <label for="node-input-autoreset"><i class="fa fa-wrench"></i> </label>
+        <input type="checkbox" id="node-input-autoreset" style="display:inline-block; width:30px " autocomplete="off">
+		<label style="width: 30% " for="node-input-autoreset" >Reset after  </label>
+        <input type="text" id="node-input-max_msg" style="width: 60%" placeholder="Set max payload">
+        </div>
+        <BR>
+        <BR>
+        <div align=left      
+        <label for="node-input-timeout"><i class="fa fa-clock-o"></i> </label>
+        <input type="checkbox" id="node-input-timeout" style="display:inline-block; width:30px " autocomplete="off"> 
+        <label style="width: 30% " for="node-input-timeout" >Timeout to reset </label>
+        <input type="text" id="node-input-max_timeout" style="width: 60%" placeholder="set seconds in Ms"> 
+        </div>
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="crp">
+    <p>Count,Reset to allow Payload</p>
+</script>

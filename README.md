@@ -3,6 +3,7 @@
 [![library](https://img.shields.io/badge/library-nodered-red)](https://flows.nodered.org/node/node-red-contrib-crp)
 [![package](https://img.shields.io/badge/package-npm-success)](https://www.npmjs.com/package/node-red-contrib-crp)
 [![license](https://img.shields.io/badge/license-Apache--2.0-yellowgreen)](https://apache.org/licenses/LICENSE-2.0)
+[![donate](https://img.shields.io/badge/donate-wango-blue)](https://www.wango.org/donate.aspx)
 
 # node-red-contrib-crp
 

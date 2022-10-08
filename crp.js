@@ -4,7 +4,6 @@ module.exports = function (RED) {
 			RED.nodes.createNode(this, config);
 			let node = this;
 			node.on('input', function (msg) {
-				let msg1 = { payload: "" };
 				let node = this;
 				let max_msg = msg.hasOwnProperty("max_msg") ? msg.max_count : config.max_msg;
 				let autoreset = msg.hasOwnProperty("autoreset") ? msg.autoreset : config.autoreset;
